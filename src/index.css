@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-lexend: "Lexend", sans-serif;
+
+  --color-aero-black: #101411;
+  --color-aero-dark: #1c211d;
+  --color-aero-green: #8bd7a0;
+  --color-aero-border: #2a322c;
+  --color-aero-text-muted: #a1a1a1;
+}
+
+body {
+  @apply bg-aero-black text-white font-lexend antialiased;
+}
+
+h1, h2, h3, h4, .font-impact {
+  @apply font-bebas tracking-wider;
+}
